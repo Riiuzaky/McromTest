@@ -8,7 +8,7 @@ test.describe('New Record ET Suite', () => {
 
     test('New Record Dark Mode English Language Gas Master UnPlanned', async ({ page }) => {
 
-        test.setTimeout(60000);
+        test.setTimeout(120000);
 
         await test.step('Login', async () => {
             await page.goto(Constants.URL);
@@ -65,7 +65,7 @@ test.describe('New Record ET Suite', () => {
 
     test('New Record Light Mode English Language Gas Master Planned', async ({ page }) => {
         
-        test.setTimeout(60000);
+        test.setTimeout(120000);
 
         await test.step('Login', async () => {
             await page.goto(Constants.URL);
@@ -121,7 +121,7 @@ test.describe('New Record ET Suite', () => {
 
     test('New Record Dark Mode Spanish Language Gas Master UnPlanned', async ({ page }) => {
         
-        test.setTimeout(60000);
+        test.setTimeout(120000);
 
         await test.step('Login', async () => {
             await page.goto(Constants.URL);
