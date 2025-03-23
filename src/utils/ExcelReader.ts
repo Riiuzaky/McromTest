@@ -28,6 +28,8 @@ export class ExcelReader {
     }
   }
 
+
+  // write to excel
   static writeExcel(filePath: string, sheetName: string, rowIndex: number, columnHeader: string, value: string): void {
     const workbook = XLSX.readFile(filePath);
     const sheet = workbook.Sheets[sheetName];
