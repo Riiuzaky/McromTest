@@ -1,0 +1,907 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: New Record ET Suite >> New Record Light Mode English Language Gas Master Planned
+- Location: /home/runner/work/McromTest/McromTest/test/modules/enhancedOutages/NewRecord.spec.ts:66:9
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 120000ms exceeded.
+Call log:
+  - waiting for locator('//div[@class=\'modal-footer\']/button[@class=\'btn btn-sm btn-primary highlight\']')
+    - locator resolved to <button disabled type="button" _ngcontent-avl-c342="" class="btn btn-sm btn-primary highlight">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not enabled
+    - retrying click action
+      - waiting 100ms
+    196 × waiting for element to be visible, enabled and stable
+        - element is not enabled
+      - retrying click action
+        - waiting 500ms
+
+    at Function.createNewRecord (/home/runner/work/McromTest/McromTest/src/task/modules/enhancedOutages/NewRecordEtTask.ts:240:58)
+    at /home/runner/work/McromTest/McromTest/test/modules/enhancedOutages/NewRecord.spec.ts:108:35
+    at /home/runner/work/McromTest/McromTest/test/modules/enhancedOutages/NewRecord.spec.ts:107:20
+```
+
+# Page snapshot
+
+```yaml
+- banner:
+  - button
+  - list:
+    - listitem
+    - listitem:
+      - combobox:
+        - option "DESK A"
+        - option "Desk B"
+        - option "Desk C"
+        - option "Desk D"
+        - option "Desk E"
+        - option "Gas Master" [selected]
+        - option "Gas North"
+        - option "Gas South"
+        - option "Liquid East Console"
+        - option "Liquid Master Console"
+        - option "Super Console"
+        - option "Hebert Console"
+        - option "Liquid West Console"
+        - option "JV Console"
+    - text: Tory DEV
+  - list:
+    - listitem: User 1, Automation (Automation)
+    - listitem:
+      - button:
+        - img
+    - listitem:
+      - img
+      - text: "46"
+    - listitem:
+      - img
+    - listitem:
+      - img "MaCRoM Icon"
+- navigation:
+  - list:
+    - listitem
+    - listitem:
+      - img
+      - text: Cockpit
+    - listitem:
+      - img
+      - text: Calendar
+    - listitem
+    - listitem:
+      - img
+      - text: Map
+    - listitem:
+      - img
+      - text: Contacts
+    - listitem
+    - listitem:
+      - img
+      - text: Daily Event Log
+    - listitem:
+      - img
+      - text: Shift Management
+    - listitem:
+      - img
+      - text: Initial Notification
+    - listitem:
+      - img
+      - text: Alarm management
+      - list:
+        - listitem:
+          - img
+          - text: Historical analysis
+        - listitem:
+          - img
+          - text: Alarm Grid
+    - listitem:
+      - img
+      - text: Shift Scheduling
+      - list:
+        - listitem:
+          - img
+          - text: Schedule Grid View
+        - listitem:
+          - img
+          - text: Schedule View
+        - listitem:
+          - img
+          - text: Schedule Programs
+        - listitem:
+          - img
+          - text: Planning Tool
+        - listitem:
+          - img
+          - text: Controller Certification
+        - listitem:
+          - img
+          - text: Shift Schedule Time Off
+    - listitem:
+      - img
+      - text: AOCs
+      - list:
+        - listitem:
+          - img
+          - text: AOCs
+        - listitem:
+          - img
+          - text: AOC Ignore
+    - listitem:
+      - img
+      - text: Safety Protocol
+    - listitem:
+      - img
+      - text: Outages
+    - listitem:
+      - img
+      - text: Enhanced Outages
+    - listitem:
+      - img
+      - text: MOC
+      - list:
+        - listitem:
+          - img
+          - text: MOC Assessment
+        - listitem:
+          - img
+          - text: MOC
+    - listitem:
+      - img
+      - text: Tickets
+    - listitem:
+      - img
+      - text: Call Log
+    - listitem:
+      - img
+      - text: Reporting
+    - listitem:
+      - img
+      - text: Callouts
+      - list:
+        - listitem:
+          - img
+          - text: Enhanced Callout Team
+        - listitem:
+          - img
+          - text: Enhanced Callout Schedule
+        - listitem:
+          - img
+          - text: Enhanced Team View
+    - listitem:
+      - img
+      - text: SCADA
+      - list:
+        - listitem:
+          - img
+          - text: SCADA Points
+        - listitem:
+          - img
+          - text: Point Test
+    - listitem:
+      - img
+      - text: CRM Forms
+      - list:
+        - listitem:
+          - img
+          - text: CCD Form
+        - listitem:
+          - img
+          - text: Deviation Form
+        - listitem:
+          - img
+          - text: Manual Operations Test
+        - listitem:
+          - img
+          - text: Backup SCADA Test
+        - listitem:
+          - img
+          - text: Fatigue Education
+        - listitem:
+          - img
+          - text: Safety Related Alarms
+        - listitem:
+          - img
+          - text: CRM Training Plan
+        - listitem:
+          - img
+          - text: CRM Plan Review
+        - listitem:
+          - img
+          - text: Lessons Learned
+        - listitem:
+          - img
+          - text: SOP Docs
+        - listitem:
+          - img
+          - text: Document Tracker
+        - listitem:
+          - img
+          - text: Incident Review
+    - listitem:
+      - img
+      - text: Custom Forms
+      - list:
+        - listitem:
+          - img
+          - text: Schema Manager
+        - listitem:
+          - img
+          - text: Forms
+    - listitem:
+      - img
+      - text: Compliance
+      - list:
+        - listitem:
+          - img
+          - text: Tasks
+        - listitem:
+          - img
+          - text: Assignments
+        - listitem:
+          - img
+          - text: Scheduled Tasks
+    - listitem:
+      - img
+      - text: Add-Ons
+      - list:
+        - listitem:
+          - img
+          - text: Equipment Tracker
+        - listitem:
+          - img
+          - text: Project Tracker
+        - listitem:
+          - img
+          - text: Right of Way
+    - listitem:
+      - img
+      - text: System
+      - list:
+        - listitem:
+          - img
+          - text: Configuration
+          - list:
+            - listitem:
+              - img
+              - text: Locations
+        - listitem:
+          - img
+          - text: Users & Security
+          - list:
+            - listitem:
+              - img
+              - text: Consoles
+            - listitem:
+              - img
+              - text: Roles
+            - listitem:
+              - img
+              - text: Users
+            - listitem:
+              - img
+              - text: User Groups
+            - listitem:
+              - img
+              - text: Distribution Lists
+            - listitem:
+              - img
+              - text: Contacts
+            - listitem:
+              - img
+              - text: Vacation
+            - listitem:
+              - img
+              - text: HR Data
+        - listitem:
+          - img
+          - text: System Admin
+          - list:
+            - listitem:
+              - img
+              - text: System Notifications
+            - listitem:
+              - img
+              - text: System Settings
+- button:
+  - img
+- main:
+  - img
+  - text: ENHANCED OUTAGES
+  - button " New"
+  - img
+  - button "All Records"
+  - button
+  - img
+  - button
+  - grid:
+    - row:
+      - columnheader
+    - row:
+      - gridcell
+    - rowgroup:
+      - row "Id Legacy Id Update Date Creation Date Title Status Type":
+        - columnheader "Id"
+        - columnheader "Legacy Id"
+        - columnheader "Update Date"
+        - columnheader "Creation Date"
+        - columnheader "Title"
+        - columnheader "Status"
+        - columnheader "Type"
+      - row "Open Filter Menu Open Filter Menu   Open Filter Menu   Open Filter Menu Open Filter Menu Open Filter Menu Open Filter Menu":
+        - gridcell "Open Filter Menu":
+          - textbox "Id Filter Input"
+          - button "Open Filter Menu": 
+        - gridcell "Open Filter Menu":
+          - textbox "Legacy Id Filter Input"
+          - button "Open Filter Menu": 
+        - gridcell "  Open Filter Menu":
+          - textbox
+          - text:  
+          - button "Open Filter Menu": 
+        - gridcell "  Open Filter Menu":
+          - textbox
+          - text:  
+          - button "Open Filter Menu": 
+        - gridcell "Open Filter Menu":
+          - textbox "Title Filter Input"
+          - button "Open Filter Menu": 
+        - gridcell "Open Filter Menu":
+          - textbox "Status Filter Input" [disabled]
+          - button "Open Filter Menu": 
+        - gridcell "Open Filter Menu":
+          - textbox "Type Filter Input"
+          - button "Open Filter Menu": 
+    - row "Press SPACE to select this row":
+      - gridcell
+    - row "Press SPACE to select this row":
+      - gridcell
+    - row "Press SPACE to select this row":
+      - gridcell
+    - row "Press SPACE to select this row":
+      - gridcell
+    - row "Press SPACE to select this row":
+      - gridcell
+    - row "Press SPACE to select this row":
+      - gridcell
+    - row "Press SPACE to select this row":
+      - gridcell
+    - row "Press SPACE to select this row":
+      - gridcell
+    - row "Press SPACE to select this row":
+      - gridcell
+    - row "Press SPACE to select this row":
+      - gridcell
+    - row "Press SPACE to select this row":
+      - gridcell
+    - row "Press SPACE to select this row":
+      - gridcell
+    - row "Press SPACE to select this row":
+      - gridcell
+    - row "Press SPACE to select this row":
+      - gridcell
+    - row "Press SPACE to select this row":
+      - gridcell
+    - row "Press SPACE to select this row":
+      - gridcell
+    - row "Press SPACE to select this row":
+      - gridcell
+    - rowgroup:
+      - row "Press SPACE to select this row":
+        - gridcell "418"
+        - gridcell
+        - gridcell "03/23/2025 08:32 PM"
+        - gridcell "03/23/2025 08:32 PM"
+        - gridcell "QA title 4"
+        - gridcell "Draft"
+        - gridcell "Unplanned"
+      - row "Press SPACE to select this row":
+        - gridcell "417"
+        - gridcell
+        - gridcell "03/23/2025 08:31 PM"
+        - gridcell "03/23/2025 08:31 PM"
+        - gridcell "QA title 4"
+        - gridcell "Draft"
+        - gridcell "Planned"
+      - row "Press SPACE to select this row":
+        - gridcell "416"
+        - gridcell
+        - gridcell "03/23/2025 08:31 PM"
+        - gridcell "03/23/2025 08:31 PM"
+        - gridcell "QA title 4"
+        - gridcell "Draft"
+        - gridcell "Unplanned"
+      - row "Press SPACE to select this row":
+        - gridcell "415"
+        - gridcell
+        - gridcell "03/23/2025 08:29 PM"
+        - gridcell "03/23/2025 08:29 PM"
+        - gridcell "QA title 4"
+        - gridcell "Draft"
+        - gridcell "Unplanned"
+      - row "Press SPACE to select this row":
+        - gridcell "414"
+        - gridcell
+        - gridcell "03/23/2025 08:24 PM"
+        - gridcell "03/23/2025 08:24 PM"
+        - gridcell "QA title 4"
+        - gridcell "Draft"
+        - gridcell "Planned"
+      - row "Press SPACE to select this row":
+        - gridcell "413"
+        - gridcell
+        - gridcell "03/23/2025 08:24 PM"
+        - gridcell "03/23/2025 08:24 PM"
+        - gridcell "QA title 4"
+        - gridcell "Draft"
+        - gridcell "Unplanned"
+      - row "Press SPACE to select this row":
+        - gridcell "412"
+        - gridcell
+        - gridcell "03/23/2025 08:16 PM"
+        - gridcell "03/23/2025 08:16 PM"
+        - gridcell "QA title 4"
+        - gridcell "Draft"
+        - gridcell "Planned"
+      - row "Press SPACE to select this row":
+        - gridcell "411"
+        - gridcell
+        - gridcell "03/23/2025 08:16 PM"
+        - gridcell "03/23/2025 08:16 PM"
+        - gridcell "QA title 4"
+        - gridcell "Draft"
+        - gridcell "Planned"
+      - row "Press SPACE to select this row":
+        - gridcell "410"
+        - gridcell
+        - gridcell "03/23/2025 08:08 PM"
+        - gridcell "03/23/2025 08:08 PM"
+        - gridcell "QA title 4"
+        - gridcell "Draft"
+        - gridcell "Unplanned"
+      - row "Press SPACE to select this row":
+        - gridcell "409"
+        - gridcell
+        - gridcell "03/23/2025 08:06 PM"
+        - gridcell "03/23/2025 08:06 PM"
+        - gridcell "QA title 4"
+        - gridcell "Draft"
+        - gridcell "Unplanned"
+      - row "Press SPACE to select this row":
+        - gridcell "408"
+        - gridcell
+        - gridcell "03/23/2025 08:04 PM"
+        - gridcell "03/23/2025 08:04 PM"
+        - gridcell "QA title 4"
+        - gridcell "Draft"
+        - gridcell "Unplanned"
+      - row "Press SPACE to select this row":
+        - gridcell "407"
+        - gridcell
+        - gridcell "03/23/2025 07:59 PM"
+        - gridcell "03/23/2025 07:59 PM"
+        - gridcell "QA title 4"
+        - gridcell "Draft"
+        - gridcell "Unplanned"
+      - row "Press SPACE to select this row":
+        - gridcell "406"
+        - gridcell
+        - gridcell "03/23/2025 07:54 PM"
+        - gridcell "03/23/2025 07:54 PM"
+        - gridcell "QA title 4"
+        - gridcell "Draft"
+        - gridcell "Unplanned"
+      - row "Press SPACE to select this row":
+        - gridcell "405"
+        - gridcell
+        - gridcell "03/23/2025 07:53 PM"
+        - gridcell "03/23/2025 07:53 PM"
+        - gridcell "QA title 4"
+        - gridcell "Draft"
+        - gridcell "Unplanned"
+      - row "Press SPACE to select this row":
+        - gridcell "404"
+        - gridcell
+        - gridcell "03/23/2025 07:49 PM"
+        - gridcell "03/23/2025 07:49 PM"
+        - gridcell "QA title 4"
+        - gridcell "Draft"
+        - gridcell "Unplanned"
+      - row "Press SPACE to select this row":
+        - gridcell "403"
+        - gridcell
+        - gridcell "03/23/2025 07:48 PM"
+        - gridcell "03/23/2025 07:48 PM"
+        - gridcell "QA title 4"
+        - gridcell "Draft"
+        - gridcell "Unplanned"
+      - row "Press SPACE to select this row":
+        - gridcell "402"
+        - gridcell
+        - gridcell "03/23/2025 07:36 PM"
+        - gridcell "03/23/2025 07:36 PM"
+        - gridcell "QA title 4"
+        - gridcell "Draft"
+        - gridcell "Unplanned"
+  - status
+  - status
+  - status:
+    - img
+    - text: Auto Refresh
+  - status: 1 to 20 of 393
+  - button "First Page" [disabled]: 
+  - button "Previous Page" [disabled]: 
+  - status: Page 1 of 20
+  - button "Next Page": 
+  - button "Last Page": 
+- complementary
+- dialog:
+  - document:
+    - heading "New Outage" [level=4]
+    - img
+    - strong: "Outage Details:"
+    - text: "Title:"
+    - textbox: QA title 4
+    - text: "Description:"
+    - textbox: Qa description 4
+    - text: "Summary:"
+    - textbox: Qa summary 4
+    - text: "Text Area 1:"
+    - textbox: QA txt a 1
+    - text: "Text Area 2:"
+    - textbox: QA text a 2
+    - text: "Text Area 3:"
+    - textbox: QA text a 2
+    - text: "Type: Planned"
+    - combobox:
+      - textbox
+    - text: Severity
+    - combobox:
+      - textbox
+    - text: Department
+    - combobox:
+      - textbox
+    - text: "Dropdown 1: E-Outages Option 1-1"
+    - combobox:
+      - textbox
+    - text: "Dropdown 2: E-Outages Option 2-1"
+    - combobox:
+      - textbox
+    - text: "Dropdown 3: E-Outages Option 3-1"
+    - combobox:
+      - textbox
+    - text: "Work Type: Work Type 1"
+    - combobox:
+      - textbox
+    - text: "Work Detail: Work Detail 1-1"
+    - combobox:
+      - textbox
+    - text: "Work Classification: Work Classification 1-1"
+    - combobox:
+      - textbox
+    - strong: "Financial Details:"
+    - text: "Capcity Impact: Budget"
+    - combobox:
+      - textbox
+    - text: Flow Affected
+    - textbox
+    - text: Product Loss
+    - textbox
+    - strong: "Facility Details:"
+    - text: Console
+    - textbox "Console" [disabled]: Gas Master
+    - text: Asset Gas Assets
+    - combobox:
+      - textbox "Asset"
+    - button "Hierarchy Selection" [expanded]
+    - region "Hierarchy Selection":
+      - text: Division North
+      - combobox:
+        - textbox "Division"
+      - text: Area Armstrong
+      - combobox:
+        - textbox "Area"
+      - text:  System Filter - Optional System One
+      - combobox:
+        - textbox " System Filter - Optional"
+      - text:  Location Type Filter - Optional
+      - combobox:
+        - textbox " Location Type Filter - Optional"
+      - text: Location Name
+      - combobox:
+        - textbox "Location Name"
+      - text: Location Code
+      - combobox:
+        - textbox "Location Code"
+      - text: You must select a Location to select a Unit
+    - text: "Selected Hierarchy:"
+    - strong: Gas Assets
+    - text: Clear All Collapse All
+    - tree:
+      - treeitem "Toggle North North" [expanded] [level=1]:
+        - button "Toggle North":
+          - img
+        - img
+        - text: North
+        - group:
+          - treeitem "Armstrong" [expanded] [level=2]:
+            - img
+            - text: Armstrong
+    - strong: "Personnel:"
+    - text: Manager Remove
+    - img
+    - text: Cruz, Jonathan S. (QA Tester)
+    - button "Manager":
+      - img
+      - text: Manager
+    - text: Work Manager Remove
+    - img
+    - text: Rodriguez, Santiago
+    - button "Work Manager":
+      - img
+      - text: Work Manager
+    - text: "Caller:"
+    - textbox: Jonathan
+    - text: "Callee:"
+    - textbox: Jonathan QA
+    - strong: "Scheduling:"
+    - text: Planned Start Date
+    - textbox "MM": "03"
+    - textbox "dd": "21"
+    - textbox "yyyy": "2025"
+    - textbox "hh": "12"
+    - text: ":"
+    - textbox "mm": "00"
+    - text: AM
+    - combobox:
+      - textbox
+    - img
+    - text: Reset Planned Duration
+    - spinbutton: "7"
+    - text: Planned End Date
+    - textbox "MM": "03"
+    - textbox "dd": "28"
+    - textbox "yyyy": "2025"
+    - textbox "hh": "12"
+    - text: ":"
+    - textbox "mm": "00"
+    - text: AM
+    - combobox:
+      - textbox
+    - img
+    - text: Reset
+    - separator
+    - text: Start No Earlier Than
+    - textbox "MM": "03"
+    - textbox "dd": "19"
+    - textbox "yyyy": "2025"
+    - textbox "hh": "12"
+    - text: ":"
+    - textbox "mm": "00"
+    - text: AM
+    - combobox:
+      - textbox
+    - img
+    - text: Reset Start No Later Than
+    - textbox "MM": "03"
+    - textbox "dd": "26"
+    - textbox "yyyy": "2025"
+    - textbox "hh": "12"
+    - text: ":"
+    - textbox "mm": "00"
+    - text: AM
+    - combobox:
+      - textbox
+    - img
+    - text: Reset
+    - separator
+    - text: Actual Start Date
+    - textbox "MM": "03"
+    - textbox "dd": "26"
+    - textbox "yyyy": "2025"
+    - textbox "hh": "12"
+    - text: ":"
+    - textbox "mm": "00"
+    - text: AM
+    - combobox:
+      - textbox
+    - img
+    - text: Reset Actual Duration
+    - spinbutton: "1"
+    - text: Actual End Date
+    - textbox "MM": "03"
+    - textbox "dd": "27"
+    - textbox "yyyy": "2025"
+    - textbox "hh": "12"
+    - text: ":"
+    - textbox "mm": "00"
+    - text: AM
+    - combobox:
+      - textbox
+    - img
+    - text: Reset General Form Modal Section Test Gral Form Modal TextBox 1 
+    - textbox
+    - text: Gral Form Modal Text 1 
+    - textbox "null"
+    - text: Gral Form Modal Radio 1 
+    - radio
+    - text: "Yes"
+    - radio
+    - text: "No"
+    - checkbox "Gral Form Modal CheckBox 1 "
+    - text: Gral Form Modal CheckBox 1  Gral Form Modal Datetime 1 
+    - textbox "MM"
+    - textbox "dd"
+    - textbox "yyyy"
+    - textbox "hh"
+    - text: ":"
+    - textbox "mm"
+    - text: aa
+    - combobox:
+      - textbox
+    - img
+    - text: Reset Gral Form Modal Dropdown 1 
+    - combobox:
+      - textbox
+    - text: Gral Form Modal Multiselect 1  Select Options
+    - combobox:
+      - textbox
+    - text: Form is invalid. Please fill out all required fields before submission.
+    - button " Submit" [disabled]
+    - button " Cancel"
+```
+
+# Test source
+
+```ts
+  140 |         );
+  141 |         ExcelReader.writeExcel(Constants.RUTADATAEOUT, 'Hoja1', row, 'Dropdown 3', selectedText);
+  142 |
+  143 |         // work type
+  144 |         await page.locator(FormNewRecordETUi.workType).scrollIntoViewIfNeeded();
+  145 |         await page.locator(FormNewRecordETUi.workType).waitFor({ state: 'visible' });
+  146 |       
+  147 |         selectedText = await Reusable.selectOptionByIndex(
+  148 |           page,
+  149 |           FormNewRecordETUi.workType,
+  150 |           FormNewRecordETUi.optionsWorkType,
+  151 |           3
+  152 |         );
+  153 |         ExcelReader.writeExcel(Constants.RUTADATAEOUT, 'Hoja1', row, 'Work Type', selectedText);
+  154 |
+  155 |         // work detail
+  156 |         await page.locator(FormNewRecordETUi.workDetail).scrollIntoViewIfNeeded();
+  157 |         await page.locator(FormNewRecordETUi.workDetail).waitFor({ state: 'visible' });
+  158 |       
+  159 |         selectedText = await Reusable.selectOptionByIndex(
+  160 |           page,
+  161 |           FormNewRecordETUi.workDetail,
+  162 |           FormNewRecordETUi.optionsWorkDetail,
+  163 |           0
+  164 |         );
+  165 |         ExcelReader.writeExcel(Constants.RUTADATAEOUT, 'Hoja1', row, 'Work Detail', selectedText);
+  166 |
+  167 |         // work classification
+  168 |         await page.locator(FormNewRecordETUi.workClassification).scrollIntoViewIfNeeded();
+  169 |         await page.locator(FormNewRecordETUi.workClassification).waitFor({ state: 'visible' });
+  170 |       
+  171 |         selectedText = await Reusable.selectOptionByIndex(
+  172 |           page,
+  173 |           FormNewRecordETUi.workClassification,
+  174 |           FormNewRecordETUi.optionsWorkClassification,
+  175 |           0
+  176 |         );
+  177 |         ExcelReader.writeExcel(Constants.RUTADATAEOUT, 'Hoja1', row, 'Work Classification', selectedText);
+  178 |       
+  179 |         // take screenshot
+  180 |         await Reusable.captureStepScreenshot(page, 'Fill The Fields Basic Two');
+  181 |
+  182 |         // caller
+  183 |
+  184 |         const caller = ExcelReader.getCellValue(Constants.RUTADATAEOUT, 'Hoja1', row, 'Caller');
+  185 |         //wait for the element to be visible and then fill
+  186 |         await page.locator(FormNewRecordETUi.inputCaller).waitFor({ state: 'visible' });
+  187 |         await page.fill(FormNewRecordETUi.inputCaller, caller);
+  188 |
+  189 |         // caller
+  190 |
+  191 |         const callee = ExcelReader.getCellValue(Constants.RUTADATAEOUT, 'Hoja1', row, 'Callee');
+  192 |         //wait for the element to be visible and then fill
+  193 |         await page.locator(FormNewRecordETUi.inputCallee).waitFor({ state: 'visible' });
+  194 |         await page.fill(FormNewRecordETUi.inputCallee, callee);
+  195 |
+  196 |          // take screenshot
+  197 |          await Reusable.captureStepScreenshot(page, 'Fill The Fields Basic Two Callers');
+  198 |
+  199 |     }
+  200 |
+  201 |     static async selectHierarchy(page: Page, row: number) {
+  202 |       const params = ['Activo', 'Division', 'Area', 'Filter Of System'].map(key =>
+  203 |         ExcelReader.getCellValue(Constants.RUTADATAEOUT, 'Hoja1', row, key)
+  204 |       );
+  205 |       
+  206 |       await Reusable.selectHierarchy(page, ...params);
+  207 |
+  208 |       // take screenshot
+  209 |       await Reusable.captureStepScreenshot(page, 'Select Hierarchy');
+  210 |     }
+  211 |
+  212 |     static async selectContact(page: Page, row: number) {
+  213 |
+  214 |       await page.locator(FormNewRecordETUi.manager).click();
+  215 |
+  216 |       await Reusable.selectContactForId(
+  217 |         page,
+  218 |         ExcelReader.getCellValue(Constants.RUTADATAEOUT, 'Hoja1', row, 'ID Manager'),
+  219 |         'Manager',
+  220 |         Constants.RUTADATAEOUT
+  221 |       );
+  222 |       
+  223 |       await page.locator(FormNewRecordETUi.workManager).click();
+  224 |       
+  225 |       await Reusable.selectContactForId(
+  226 |         page,
+  227 |         ExcelReader.getCellValue(Constants.RUTADATAEOUT, 'Hoja1', row, 'ID Work Manager'),
+  228 |         'Work Manager',
+  229 |         Constants.RUTADATAEOUT
+  230 |       );
+  231 |
+  232 |       // take screenshot
+  233 |       await page.waitForTimeout(1000);
+  234 |       await Reusable.captureStepScreenshot(page, 'Select Contact');
+  235 |       
+  236 |     }
+  237 |
+  238 |     static async createNewRecord(page: Page) {
+  239 |
+> 240 |       await page.locator(FormNewRecordETUi.buttonCreate).click();
+      |                                                          ^ Error: locator.click: Test timeout of 120000ms exceeded.
+  241 |       await page.waitForTimeout(1000);
+  242 |
+  243 |       // take screenshot
+  244 |       await Reusable.captureStepScreenshot(page, 'Create New Record');
+  245 |     }
+  246 |
+  247 |     static async reChargeGrid(page: Page){
+  248 |         // wait for 2 seconds
+  249 |         await page.waitForTimeout(500);
+  250 |       
+  251 |         // close side bar
+  252 |         await page.locator(SideBarETUi.btnCloseSideBar).click();
+  253 |       
+  254 |         // change module to compliance
+  255 |         await page.locator(ModulesBarUi.compliBtn).click();
+  256 |         await page.waitForTimeout(500);
+  257 |       
+  258 |         // select sub module to tasks
+  259 |         await page.locator(ModulesBarUi.tasksBtn).click();
+  260 |         await page.waitForTimeout(500);
+  261 |       
+  262 |         // return to enhanced outages
+  263 |         await page.locator(ModulesBarUi.eoutBtn).click();
+  264 |         await page.waitForTimeout(500);
+  265 |
+  266 |         // take screenshot
+  267 |         await Reusable.captureStepScreenshot(page, 'Recharge Grid');
+  268 |       }
+  269 |
+  270 |
+  271 |
+  272 |
+  273 |
+  274 |
+  275 |
+  276 | }
+```

@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","123911","New Record Dark Mode Spanish Language Gas Master UnPlanned","","Sun Mar 23 22:44:27 UTC 2025","broken","Sun Mar 23 22:46:31 UTC 2025","New Record ET Suite","modules/enhancedOutages/NewRecord.spec.ts","",""
+"","124682","New Record Dark Mode English Language Gas Master UnPlanned","","Sun Mar 23 22:40:12 UTC 2025","broken","Sun Mar 23 22:42:17 UTC 2025","New Record ET Suite","modules/enhancedOutages/NewRecord.spec.ts","",""
+"","124701","New Record Light Mode English Language Gas Master Planned","","Sun Mar 23 22:42:22 UTC 2025","broken","Sun Mar 23 22:44:27 UTC 2025","New Record ET Suite","modules/enhancedOutages/NewRecord.spec.ts","",""
